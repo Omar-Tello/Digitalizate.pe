@@ -4,7 +4,7 @@
   const links = [
     ["index.html", "✨", "Intro"],
     ["principal/index.html", "🏠", "Inicio"],
-    ["software/index.html", "📅", "Software"],
+    ["software/index.html", "🕹️", "Software"],
     ["hardware/index.html", "💻", "Hardware"],
     ["capacitaciones/index.html", "🎓", "Capacitaciones"],
     ["diseno-grafico/index.html", "🎨", "Diseño"],
