@@ -1,10 +1,10 @@
 const products = [
   {
-    category: "Camara de seguridad",
+    category: "Cámara de seguridad",
     title: "VIGILA",
     title2: "TU NEGOCIO",
     description:
-      "Venta, instalacion y configuracion de camaras de seguridad para casas, tiendas, oficinas y almacenes.",
+      "Venta, instalación y configuración de cámaras de seguridad para casas, tiendas, oficinas y almacenes.",
     image:
       "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1800&q=82",
   },
@@ -18,7 +18,7 @@ const products = [
       "https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&fit=crop&w=1800&q=82",
   },
   {
-    category: "Servicio tecnico",
+    category: "Servicio técnico",
     title: "SOPORTE",
     title2: "RAPIDO",
     description:
@@ -27,7 +27,7 @@ const products = [
       "https://images.unsplash.com/photo-1581092921461-39b2f2f8a8b9?auto=format&fit=crop&w=1800&q=82",
   },
   {
-    category: "Instalacion de programas",
+    category: "Instalación de programas",
     title: "SOFTWARE",
     title2: "LISTO",
     description:
@@ -40,7 +40,7 @@ const products = [
     title: "SISTEMA",
     title2: "RENOVADO",
     description:
-      "Formateo, instalacion o cambio de sistema operativo con respaldo, drivers y configuracion inicial del equipo.",
+      "Formateo, instalación o cambio de sistema operativo con respaldo, drivers y configuración inicial del equipo.",
     image:
       "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1800&q=82",
   },
