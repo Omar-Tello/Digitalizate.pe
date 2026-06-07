@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitalizate.pe | Camaras, Redes y Servicio Tecnico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../site-nav.css">
+</head>
+<body>
+  <div class="indicator" aria-hidden="true"></div>
+
+  <nav class="site-nav" aria-label="Navegacion principal">
+    <a class="brand" href="#">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 7.5A3.5 3.5 0 0 1 7.5 4h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9Z" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M9 9h6v6H9V9Z" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M9 2.8v2.4M15 2.8v2.4M9 18.8v2.4M15 18.8v2.4M2.8 9h2.4M2.8 15h2.4M18.8 9h2.4M18.8 15h2.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>Digitalizate.pe</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a class="active" href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Soluciones</a>
+      <a href="#">Soporte</a>
+      <a href="#">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" aria-label="Catalogo destacado de hardware">
+      <div id="slider-stage" class="slider-stage"></div>
+
+      <article class="details" id="details-even">
+        <div class="eyebrow"><span>Camara de seguridad</span></div>
+        <h1><span class="title-1">VIGILA</span><span class="title-2">TU NEGOCIO</span></h1>
+        <p class="desc">Venta, instalacion y configuracion de camaras de seguridad para casas, tiendas, oficinas y almacenes.</p>
+        <div class="cta">
+          <a class="primary-action" href="https://wa.me/51999999999" target="_blank" rel="noreferrer">Cotizar ahora</a>
+          <a class="secondary-action" href="#catalogo">Ver linea</a>
+        </div>
+      </article>
+
+      <article class="details" id="details-odd" aria-hidden="true">
+        <div class="eyebrow"><span>Camara de seguridad</span></div>
+        <h1><span class="title-1">VIGILA</span><span class="title-2">TU NEGOCIO</span></h1>
+        <p class="desc">Venta, instalacion y configuracion de camaras de seguridad para casas, tiendas, oficinas y almacenes.</p>
+        <div class="cta">
+          <a class="primary-action" href="https://wa.me/51999999999" target="_blank" rel="noreferrer">Cotizar ahora</a>
+          <a class="secondary-action" href="#catalogo">Ver linea</a>
+        </div>
+      </article>
+
+      <div class="pagination" id="pagination" aria-label="Controles del slider">
+        <button class="arrow arrow-left" type="button" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M15.5 19 8.5 12l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="arrow arrow-right" type="button" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="m8.5 5 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="progress-sub-container" aria-hidden="true">
+          <div class="progress-sub-background">
+            <div class="progress-sub-foreground"></div>
+          </div>
+        </div>
+        <div class="slide-numbers" id="slide-numbers" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cover" aria-hidden="true"></div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="../site-nav.js"></script>
+</body>
+</html>

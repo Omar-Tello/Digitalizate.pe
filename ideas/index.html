@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digitalizate.pe | Ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../site-nav.css">
+</head>
+
+<body>
+  <main class="shell">
+    <header class="brand">Digitalizate.pe</header>
+
+    <section id="app" aria-label="Generador de ideas Digitalizape">
+      <div class="toolbar">
+        <button id="btnRand" type="button">Contactanos</button>
+        <div class="seed-wrapper">
+          <label for="seedInput">Seed:</label>
+          <input id="seedInput" inputmode="numeric" placeholder="898766">
+          <button id="btnSeed" type="button">Forma parte de esta gran familia</button>
+        </div>
+      </div>
+
+      <div class="wrapper" id="stage">
+        <div id="frame">
+          <div class="container">
+            <label class="sr-only" for="ideaText">Tu idea</label>
+            <textarea id="ideaText"
+              placeholder="Cuéntanos tu idea digital, automatización, página web o sistema..."></textarea>
+          </div>
+          <span aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <button id="send-idea" type="button">enviar mi idea para hacerlo realidad</button>
+    </section>
+
+    <footer>Convierte tus ideas en soluciones reales. Creamos tecnología que impulsa negocios, automatiza procesos y
+      transforma el futuro. Si puedes soñarlo, podemos programarlo. El momento de innovar es hoy.</footer>
+  </main>
+
+  <script defer src="script.js"></script>
+  <script defer src="../site-nav.js"></script>
+</body>
+
+</html>

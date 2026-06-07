@@ -1,0 +1,127 @@
+.digitalizate-nav,
+.digitalizate-nav * {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
+.digitalizate-nav {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  z-index: 2147483000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: calc(100vw - 24px);
+  padding: 7px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(5, 8, 14, 0.84);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(18px);
+  transform: translateX(-50%);
+  scrollbar-width: none;
+}
+
+.digitalizate-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.digitalizate-nav a {
+  flex: 0 0 auto;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border-radius: 999px;
+  color: #fff;
+  font: 22px/1 "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+  text-decoration: none;
+  transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.digitalizate-nav a:hover,
+.digitalizate-nav a:focus-visible {
+  color: #071019;
+  background: #7fffd4;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.digitalizate-nav a[aria-current="page"] {
+  color: #071019;
+  background: #ffca5c;
+}
+
+.digitalizate-nav__brand {
+  color: #7fffd4 !important;
+}
+
+@media (max-width: 720px) {
+  .digitalizate-nav {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: max(8px, env(safe-area-inset-bottom));
+    left: 50%;
+    width: calc(100vw - 20px);
+    justify-content: center;
+    gap: 3px;
+    padding: 6px;
+    overflow: visible;
+    border-radius: 18px;
+    transform: translateX(-50%);
+  }
+
+  .digitalizate-nav a {
+    width: clamp(34px, 10.5vw, 42px);
+    height: clamp(34px, 10.5vw, 42px);
+    font-size: clamp(18px, 5.5vw, 22px);
+  }
+
+  body:has(.site-foot),
+  body:has(.store-toolbar),
+  body:has(.main-layout),
+  body:has(.shell) {
+    padding-bottom: calc(82px + env(safe-area-inset-bottom));
+  }
+
+  .store-toolbar,
+  .top-header,
+  .site-top {
+    scroll-margin-top: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .digitalizate-nav {
+    width: calc(100vw - 12px);
+    gap: 2px;
+    padding: 5px;
+  }
+
+  .digitalizate-nav a {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+}
